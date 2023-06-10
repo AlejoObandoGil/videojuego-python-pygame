@@ -591,7 +591,7 @@ def HomeroGana(jugador):
             if evento.type == pygame.KEYDOWN:
                 #despausamos el juego
                 if evento.key == pygame.K_r:
-                     main()
+                    main()
                 elif evento.key == pygame.K_q:
                     pygame.quit()
                     quit()
@@ -607,7 +607,7 @@ def GameOver(jugador):
     controlSonido.sonidoHomeroMuerto.play()
     fuenteSistema = pygame.font.Font(None, 30)
     textoPantalla = fuenteSistema.render("Presiona R para reiniciar el juego "
-                                         " Tu Puntaje es:" + str(jugador.puntaje), 0, (GRAY))
+    " Tu Puntaje es:" + str(jugador.puntaje), 0, (GRAY))
 
     pausado = True
 
@@ -619,7 +619,7 @@ def GameOver(jugador):
             if evento.type == pygame.KEYDOWN:
                 #despausamos el juego
                 if evento.key == pygame.K_r:
-                     main()
+                    main()
                 elif evento.key == pygame.K_q:
                     pygame.quit()
                     quit()
